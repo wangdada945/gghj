@@ -44,7 +44,7 @@ def get_random_color():
   return "#%06x" % random.randint(0, 0xFFFFFF)
 
 def get_today():
-  return today.year+"年"+today.month+"月"+today.day+"日"
+  return today.__str__()
 
 client = WeChatClient(app_id, app_secret)
 
